@@ -37,10 +37,15 @@ function getCardType($row)
     }
 
     if ($row["effect"] == 1) {
-        $className .= " effect";
         $fullType .= "/Effect";
-    } else {
-        $className .= " normal";
+    }
+
+    if ($className == "") {
+        if ($row["effect"] == 1) {
+            $className .= " effect";
+        } else {
+            $className .= " normal";
+        }
     }
     return (array($fullType . ']', $className));
 }
@@ -59,13 +64,6 @@ function createMonsterCards($result)
         $type = $cardTypes[0];
         $className = $cardTypes[1];
         $attribute = $row["attribute"];
-        if ($row["xyz"] == 1) {
-            $levelType = "Rank: ";
-        } else if ($row["link"] == 1) {
-            $levelType = "Link Rating: ";
-        } else {
-            $levelType = "Level: ";
-        }
         $level = $row["level"];
         $attack = $row["attack"];
         $defense = $row["defense"];
