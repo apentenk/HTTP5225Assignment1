@@ -1,0 +1,40 @@
+.normal{
+    background-color: #FDE68A !important;
+}
+
+.effect{
+    background-color: #FF8B53!important;
+}
+
+.Fusion{
+    background-color: #A086B7!important;
+}
+
+.Ritual{
+    background-color: #9DB5CC!important;
+}
+
+.Synchro{
+    background-color: #CCCCCC!important;
+}
+
+.Xyz{
+    background-color: #000!important;
+    color: #fff!important;
+}
+
+.Link{
+    background-color: #00008B!important;
+}
+
+.spell{
+    background-color: #1D9E74!important;
+}
+
+.trap{
+    background-color: #BC5A84!important;
+}
+
+.closed{
+    display: none;
+}
